@@ -7,12 +7,15 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>免费在线头像装饰工具 - 艾孜尔江制</title>
     <style>
+        html {
+            /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)) ;*/   
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 200, 100, 0.5));
+        }
+
         body {
             font-size: 20px;
             text-align: center;
             margin: 0;
-            /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)) ;*/
-            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 200, 100, 0.5));
         }
 
         label {
@@ -144,9 +147,11 @@
     <a class="advert" href="tel:15212345678">广告位招租(垂询)</a>  -->
     <!-- <a class="advert" href="mailto:bjutsoft@sina.com?subject=test&cc=ezhar010@163.com&subject=提供广告赞助&body=内容：">广告位招租</a> -->
     <a class="advert"
-        href="mailto:bjutsoft@sina.com?subject=test&cc=ezhar010@163.com&subject=提供图片素材&body=要求：图片为png格式；长宽为‘1125像素">征集各类相框素材，有意者联系</a>
+        href="mailto:bjutsoft@sina.com?subject=test&cc=ezhar010@163.com&subject=OfferAssets&body=要求：png格式；长宽为‘1125’像素">征集各类相框素材，有意者联系</a>
     <script src="./js/fabric.js"></script>
     <script>
+        console.log("Avatar Decorator© Copyright by Alexander Ezharjan.")
+
         var cvs = document.getElementById("cvs");
         var ctx = cvs.getContext("2d");
         var exportImage = document.getElementById("export");
